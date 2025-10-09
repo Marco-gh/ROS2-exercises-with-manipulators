@@ -1,0 +1,2 @@
+[console_scripts]
+6dof_node = 6dof_package.6dof_node:main

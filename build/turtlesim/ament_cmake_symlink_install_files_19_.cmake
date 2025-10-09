@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_files("/home/marco/ros2_ws/src/ros_tutorials/turtlesim" FILES "/home/marco/ros2_ws/build/turtlesim/rosidl_adapter/turtlesim/srv/TeleportAbsolute.idl" "DESTINATION" "share/turtlesim/srv")

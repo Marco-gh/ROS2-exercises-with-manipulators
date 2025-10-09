@@ -1,0 +1,22 @@
+[0.544s] Invoking command in '/home/marco/ros2_ws/build/6dof': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/marco/ros2_ws/build/6dof/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marco/ros2_ws/install/6dof/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/marco/ros2_ws/build/6dof/build --no-deps symlink_data
+[0.706s] running develop
+[0.796s] running egg_info
+[0.796s] creating 6dof.egg-info
+[0.804s] writing 6dof.egg-info/PKG-INFO
+[0.804s] writing dependency_links to 6dof.egg-info/dependency_links.txt
+[0.804s] writing requirements to 6dof.egg-info/requires.txt
+[0.804s] writing top-level names to 6dof.egg-info/top_level.txt
+[0.804s] writing manifest file '6dof.egg-info/SOURCES.txt'
+[0.821s] reading manifest file '6dof.egg-info/SOURCES.txt'
+[0.822s] writing manifest file '6dof.egg-info/SOURCES.txt'
+[0.831s] running build_ext
+[0.831s] Creating /home/marco/ros2_ws/install/6dof/lib/python3.12/site-packages/6dof.egg-link (link to .)
+[0.831s] 
+[0.831s] Installed /home/marco/ros2_ws/build/6dof
+[0.831s] running symlink_data
+[0.832s] creating /home/marco/ros2_ws/install/6dof/share/ament_index
+[0.832s] creating /home/marco/ros2_ws/install/6dof/share/ament_index/resource_index
+[0.832s] creating /home/marco/ros2_ws/install/6dof/share/ament_index/resource_index/packages
+[0.832s] symbolically linking /home/marco/ros2_ws/build/6dof/resource/6dof -> /home/marco/ros2_ws/install/6dof/share/ament_index/resource_index/packages
+[0.832s] symbolically linking /home/marco/ros2_ws/build/6dof/package.xml -> /home/marco/ros2_ws/install/6dof/share/6dof
+[0.850s] Invoked command in '/home/marco/ros2_ws/build/6dof' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/marco/ros2_ws/build/6dof/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marco/ros2_ws/install/6dof/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/marco/ros2_ws/build/6dof/build --no-deps symlink_data

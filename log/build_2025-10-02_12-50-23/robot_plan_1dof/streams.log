@@ -1,0 +1,19 @@
+[0.386s] Invoking command in '/home/marco/ros2_ws/build/robot_plan_1dof': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/marco/ros2_ws/build/robot_plan_1dof/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marco/ros2_ws/install/robot_plan_1dof/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/marco/ros2_ws/build/robot_plan_1dof/build --no-deps symlink_data
+[0.545s] running develop
+[0.636s] running egg_info
+[0.644s] writing robot_plan_1dof.egg-info/PKG-INFO
+[0.644s] writing dependency_links to robot_plan_1dof.egg-info/dependency_links.txt
+[0.644s] writing entry points to robot_plan_1dof.egg-info/entry_points.txt
+[0.644s] writing requirements to robot_plan_1dof.egg-info/requires.txt
+[0.644s] writing top-level names to robot_plan_1dof.egg-info/top_level.txt
+[0.661s] reading manifest file 'robot_plan_1dof.egg-info/SOURCES.txt'
+[0.662s] writing manifest file 'robot_plan_1dof.egg-info/SOURCES.txt'
+[0.671s] running build_ext
+[0.671s] Creating /home/marco/ros2_ws/install/robot_plan_1dof/lib/python3.12/site-packages/robot-plan-1dof.egg-link (link to .)
+[0.671s] Installing listener script to /home/marco/ros2_ws/install/robot_plan_1dof/lib/robot_plan_1dof
+[0.671s] Installing talker script to /home/marco/ros2_ws/install/robot_plan_1dof/lib/robot_plan_1dof
+[0.671s] 
+[0.671s] Installed /home/marco/ros2_ws/build/robot_plan_1dof
+[0.671s] running symlink_data
+[0.671s] symbolically linking /home/marco/ros2_ws/build/robot_plan_1dof/robot_plan_1dof/launch/plan.launch.py -> /home/marco/ros2_ws/install/robot_plan_1dof/share/robot_plan_1dof/launch
+[0.687s] Invoked command in '/home/marco/ros2_ws/build/robot_plan_1dof' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/marco/ros2_ws/build/robot_plan_1dof/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marco/ros2_ws/install/robot_plan_1dof/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/marco/ros2_ws/build/robot_plan_1dof/build --no-deps symlink_data

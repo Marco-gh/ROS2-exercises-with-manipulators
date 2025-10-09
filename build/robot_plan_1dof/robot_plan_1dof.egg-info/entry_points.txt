@@ -1,0 +1,3 @@
+[console_scripts]
+listener = robot_plan_1dof.subscriber_function:main
+talker = robot_plan_1dof.publisher_function:main

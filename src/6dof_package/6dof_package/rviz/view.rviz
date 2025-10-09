@@ -1,0 +1,18 @@
+Panels:
+- Class: rviz_common/Displays
+  Name: Displays
+Visualization Manager:
+  Class: ""
+  Enabled: true
+  Fixed Frame: world
+  Displays:
+  - Class: rviz_default_plugins/Grid
+    Enabled: true
+    Name: Grid
+  - Class: rviz_default_plugins/TF
+    Enabled: true
+    Name: TF
+  - Class: rviz_default_plugins/RobotModel
+    Enabled: true
+    Name: Robot
+    Description Topic: /robot_description

@@ -1,0 +1,2 @@
+[console_scripts]
+main_node = robot_wasd.publisher_fun:main

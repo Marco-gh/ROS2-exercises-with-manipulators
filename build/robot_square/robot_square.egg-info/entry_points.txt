@@ -1,0 +1,2 @@
+[console_scripts]
+talker = robot_square.main_node:main

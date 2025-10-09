@@ -1,0 +1,18 @@
+[0.392s] Invoking command in '/home/marco/ros2_ws/build/py_pubsub': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/marco/ros2_ws/build/py_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marco/ros2_ws/install/py_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/marco/ros2_ws/build/py_pubsub/build --no-deps symlink_data
+[0.553s] running develop
+[0.642s] running egg_info
+[0.650s] writing py_pubsub.egg-info/PKG-INFO
+[0.650s] writing dependency_links to py_pubsub.egg-info/dependency_links.txt
+[0.650s] writing entry points to py_pubsub.egg-info/entry_points.txt
+[0.650s] writing requirements to py_pubsub.egg-info/requires.txt
+[0.650s] writing top-level names to py_pubsub.egg-info/top_level.txt
+[0.668s] reading manifest file 'py_pubsub.egg-info/SOURCES.txt'
+[0.668s] writing manifest file 'py_pubsub.egg-info/SOURCES.txt'
+[0.677s] running build_ext
+[0.677s] Creating /home/marco/ros2_ws/install/py_pubsub/lib/python3.12/site-packages/py-pubsub.egg-link (link to .)
+[0.678s] Installing listener script to /home/marco/ros2_ws/install/py_pubsub/lib/py_pubsub
+[0.678s] Installing talker script to /home/marco/ros2_ws/install/py_pubsub/lib/py_pubsub
+[0.678s] 
+[0.678s] Installed /home/marco/ros2_ws/build/py_pubsub
+[0.678s] running symlink_data
+[0.695s] Invoked command in '/home/marco/ros2_ws/build/py_pubsub' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/marco/ros2_ws/build/py_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marco/ros2_ws/install/py_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/marco/ros2_ws/build/py_pubsub/build --no-deps symlink_data

@@ -1,0 +1,18 @@
+[0.401s] Invoking command in '/home/marco/ros2_ws/build/robot_plan_1dof': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/marco/ros2_ws/build/robot_plan_1dof/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marco/ros2_ws/install/robot_plan_1dof/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/marco/ros2_ws/build/robot_plan_1dof/build --no-deps symlink_data
+[0.574s] running develop
+[0.664s] running egg_info
+[0.673s] writing robot_plan_1dof.egg-info/PKG-INFO
+[0.673s] writing dependency_links to robot_plan_1dof.egg-info/dependency_links.txt
+[0.673s] writing entry points to robot_plan_1dof.egg-info/entry_points.txt
+[0.673s] writing requirements to robot_plan_1dof.egg-info/requires.txt
+[0.673s] writing top-level names to robot_plan_1dof.egg-info/top_level.txt
+[0.690s] reading manifest file 'robot_plan_1dof.egg-info/SOURCES.txt'
+[0.690s] writing manifest file 'robot_plan_1dof.egg-info/SOURCES.txt'
+[0.700s] running build_ext
+[0.700s] Creating /home/marco/ros2_ws/install/robot_plan_1dof/lib/python3.12/site-packages/robot-plan-1dof.egg-link (link to .)
+[0.700s] Installing listener script to /home/marco/ros2_ws/install/robot_plan_1dof/lib/robot_plan_1dof
+[0.700s] Installing talker script to /home/marco/ros2_ws/install/robot_plan_1dof/lib/robot_plan_1dof
+[0.700s] 
+[0.700s] Installed /home/marco/ros2_ws/build/robot_plan_1dof
+[0.700s] running symlink_data
+[0.717s] Invoked command in '/home/marco/ros2_ws/build/robot_plan_1dof' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/marco/ros2_ws/build/robot_plan_1dof/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marco/ros2_ws/install/robot_plan_1dof/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/marco/ros2_ws/build/robot_plan_1dof/build --no-deps symlink_data

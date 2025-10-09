@@ -1,0 +1,17 @@
+[0.388s] Invoking command in '/home/marco/ros2_ws/build/robot_wasd': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/marco/ros2_ws/build/robot_wasd/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marco/ros2_ws/install/robot_wasd/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/marco/ros2_ws/build/robot_wasd/build --no-deps symlink_data
+[0.549s] running develop
+[0.639s] running egg_info
+[0.648s] writing robot_wasd.egg-info/PKG-INFO
+[0.648s] writing dependency_links to robot_wasd.egg-info/dependency_links.txt
+[0.648s] writing entry points to robot_wasd.egg-info/entry_points.txt
+[0.648s] writing requirements to robot_wasd.egg-info/requires.txt
+[0.648s] writing top-level names to robot_wasd.egg-info/top_level.txt
+[0.665s] reading manifest file 'robot_wasd.egg-info/SOURCES.txt'
+[0.665s] writing manifest file 'robot_wasd.egg-info/SOURCES.txt'
+[0.675s] running build_ext
+[0.675s] Creating /home/marco/ros2_ws/install/robot_wasd/lib/python3.12/site-packages/robot-wasd.egg-link (link to .)
+[0.675s] Installing main_node script to /home/marco/ros2_ws/install/robot_wasd/lib/robot_wasd
+[0.675s] 
+[0.675s] Installed /home/marco/ros2_ws/build/robot_wasd
+[0.675s] running symlink_data
+[0.692s] Invoked command in '/home/marco/ros2_ws/build/robot_wasd' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/marco/ros2_ws/build/robot_wasd/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marco/ros2_ws/install/robot_wasd/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/marco/ros2_ws/build/robot_wasd/build --no-deps symlink_data

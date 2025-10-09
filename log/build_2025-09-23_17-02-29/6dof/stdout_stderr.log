@@ -1,0 +1,20 @@
+running develop
+running egg_info
+creating 6dof.egg-info
+writing 6dof.egg-info/PKG-INFO
+writing dependency_links to 6dof.egg-info/dependency_links.txt
+writing requirements to 6dof.egg-info/requires.txt
+writing top-level names to 6dof.egg-info/top_level.txt
+writing manifest file '6dof.egg-info/SOURCES.txt'
+reading manifest file '6dof.egg-info/SOURCES.txt'
+writing manifest file '6dof.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/marco/ros2_ws/install/6dof/lib/python3.12/site-packages/6dof.egg-link (link to .)
+
+Installed /home/marco/ros2_ws/build/6dof
+running symlink_data
+creating /home/marco/ros2_ws/install/6dof/share/ament_index
+creating /home/marco/ros2_ws/install/6dof/share/ament_index/resource_index
+creating /home/marco/ros2_ws/install/6dof/share/ament_index/resource_index/packages
+symbolically linking /home/marco/ros2_ws/build/6dof/resource/6dof -> /home/marco/ros2_ws/install/6dof/share/ament_index/resource_index/packages
+symbolically linking /home/marco/ros2_ws/build/6dof/package.xml -> /home/marco/ros2_ws/install/6dof/share/6dof
