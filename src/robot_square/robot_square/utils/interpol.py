@@ -1,4 +1,4 @@
-def interpolator(A,B,n_camp):
+def linear_interpolator(A,B,n_camp):
     # Differenze con segno
     dx = B[0] - A[0]
     dy = B[1] - A[1]

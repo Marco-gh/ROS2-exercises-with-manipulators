@@ -1,0 +1,22 @@
+running develop
+running egg_info
+writing robot_plan_1dof.egg-info/PKG-INFO
+writing dependency_links to robot_plan_1dof.egg-info/dependency_links.txt
+writing entry points to robot_plan_1dof.egg-info/entry_points.txt
+writing requirements to robot_plan_1dof.egg-info/requires.txt
+writing top-level names to robot_plan_1dof.egg-info/top_level.txt
+reading manifest file 'robot_plan_1dof.egg-info/SOURCES.txt'
+writing manifest file 'robot_plan_1dof.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/marco/ros2_ws/install/robot_plan_1dof/lib/python3.12/site-packages/robot-plan-1dof.egg-link (link to .)
+Installing listener script to /home/marco/ros2_ws/install/robot_plan_1dof/lib/robot_plan_1dof
+Installing talker script to /home/marco/ros2_ws/install/robot_plan_1dof/lib/robot_plan_1dof
+
+Installed /home/marco/ros2_ws/build/robot_plan_1dof
+running symlink_data
+symbolically linking /home/marco/ros2_ws/build/robot_plan_1dof/resource/robot_plan_1dof -> /home/marco/ros2_ws/install/robot_plan_1dof/share/ament_index/resource_index/packages
+symbolically linking /home/marco/ros2_ws/build/robot_plan_1dof/package.xml -> /home/marco/ros2_ws/install/robot_plan_1dof/share/robot_plan_1dof
+symbolically linking /home/marco/ros2_ws/build/robot_plan_1dof/robot_plan_1dof/launch/plan.launch.py -> /home/marco/ros2_ws/install/robot_plan_1dof/share/robot_plan_1dof/launch
+symbolically linking /home/marco/ros2_ws/build/robot_plan_1dof/robot_plan_1dof/urdf/robot_plan.urdf -> /home/marco/ros2_ws/install/robot_plan_1dof/share/robot_plan_1dof/urdf
+symbolically linking /home/marco/ros2_ws/build/robot_plan_1dof/robot_plan_1dof/rviz/view.rviz -> /home/marco/ros2_ws/install/robot_plan_1dof/share/robot_plan_1dof/rviz
+symbolically linking /home/marco/ros2_ws/build/robot_plan_1dof/robot_plan_1dof/rviz/test.rviz -> /home/marco/ros2_ws/install/robot_plan_1dof/share/robot_plan_1dof/rviz

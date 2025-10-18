@@ -1,0 +1,15 @@
+[0.560s] Invoking command in '/home/marco/ros2_ws/build/prova_gz': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/marco/ros2_ws/build/prova_gz/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marco/ros2_ws/install/prova_gz/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/marco/ros2_ws/build/prova_gz/build --no-deps symlink_data
+[0.799s] running develop
+[0.938s] running egg_info
+[0.949s] writing prova_gz.egg-info/PKG-INFO
+[0.950s] writing dependency_links to prova_gz.egg-info/dependency_links.txt
+[0.950s] writing requirements to prova_gz.egg-info/requires.txt
+[0.950s] writing top-level names to prova_gz.egg-info/top_level.txt
+[0.974s] reading manifest file 'prova_gz.egg-info/SOURCES.txt'
+[0.975s] writing manifest file 'prova_gz.egg-info/SOURCES.txt'
+[0.988s] running build_ext
+[0.989s] Creating /home/marco/ros2_ws/install/prova_gz/lib/python3.12/site-packages/prova-gz.egg-link (link to .)
+[0.989s] 
+[0.989s] Installed /home/marco/ros2_ws/build/prova_gz
+[0.989s] running symlink_data
+[1.013s] Invoked command in '/home/marco/ros2_ws/build/prova_gz' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/marco/ros2_ws/build/prova_gz/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marco/ros2_ws/install/prova_gz/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/marco/ros2_ws/build/prova_gz/build --no-deps symlink_data

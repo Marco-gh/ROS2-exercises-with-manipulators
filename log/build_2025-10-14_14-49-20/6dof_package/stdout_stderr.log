@@ -1,0 +1,36 @@
+running develop
+Removing /home/marco/ros2_ws/install/6dof_package/lib/python3.12/site-packages/6dof-package.egg-link (link to .)
+running egg_info
+writing ../../build/6dof_package/6dof_package.egg-info/PKG-INFO
+writing dependency_links to ../../build/6dof_package/6dof_package.egg-info/dependency_links.txt
+writing entry points to ../../build/6dof_package/6dof_package.egg-info/entry_points.txt
+writing requirements to ../../build/6dof_package/6dof_package.egg-info/requires.txt
+writing top-level names to ../../build/6dof_package/6dof_package.egg-info/top_level.txt
+reading manifest file '../../build/6dof_package/6dof_package.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/6dof_package/6dof_package.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /home/marco/ros2_ws/install/6dof_package/lib/python3.12/site-packages/6dof_package
+copying /home/marco/ros2_ws/build/6dof_package/build/lib/6dof_package/__init__.py -> /home/marco/ros2_ws/install/6dof_package/lib/python3.12/site-packages/6dof_package
+copying /home/marco/ros2_ws/build/6dof_package/build/lib/6dof_package/6dof_node.py -> /home/marco/ros2_ws/install/6dof_package/lib/python3.12/site-packages/6dof_package
+byte-compiling /home/marco/ros2_ws/install/6dof_package/lib/python3.12/site-packages/6dof_package/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/marco/ros2_ws/install/6dof_package/lib/python3.12/site-packages/6dof_package/6dof_node.py to 6dof_node.cpython-312.pyc
+running install_data
+copying resource/6dof_package -> /home/marco/ros2_ws/install/6dof_package/share/ament_index/resource_index/packages
+copying package.xml -> /home/marco/ros2_ws/install/6dof_package/share/6dof_package
+creating /home/marco/ros2_ws/install/6dof_package/share/6dof_package/launch
+copying 6dof_package/launch/6dof.launch.py -> /home/marco/ros2_ws/install/6dof_package/share/6dof_package/launch
+creating /home/marco/ros2_ws/install/6dof_package/share/6dof_package/urdf
+copying 6dof_package/urdf/robot_6dof.urdf -> /home/marco/ros2_ws/install/6dof_package/share/6dof_package/urdf
+copying 6dof_package/urdf/cylinder.urdf.disable -> /home/marco/ros2_ws/install/6dof_package/share/6dof_package/urdf
+creating /home/marco/ros2_ws/install/6dof_package/share/6dof_package/rviz
+copying 6dof_package/rviz/view.rviz.disable -> /home/marco/ros2_ws/install/6dof_package/share/6dof_package/rviz
+copying 6dof_package/rviz/view.rviz -> /home/marco/ros2_ws/install/6dof_package/share/6dof_package/rviz
+running install_egg_info
+Copying ../../build/6dof_package/6dof_package.egg-info to /home/marco/ros2_ws/install/6dof_package/lib/python3.12/site-packages/6dof_package-0.0.0-py3.12.egg-info
+running install_scripts
+Installing 6dof_node script to /home/marco/ros2_ws/install/6dof_package/lib/6dof_package
+writing list of installed files to '/home/marco/ros2_ws/build/6dof_package/install.log'

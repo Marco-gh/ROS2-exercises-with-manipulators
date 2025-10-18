@@ -1,0 +1,20 @@
+running develop
+running egg_info
+writing robot_square.egg-info/PKG-INFO
+writing dependency_links to robot_square.egg-info/dependency_links.txt
+writing entry points to robot_square.egg-info/entry_points.txt
+writing requirements to robot_square.egg-info/requires.txt
+writing top-level names to robot_square.egg-info/top_level.txt
+reading manifest file 'robot_square.egg-info/SOURCES.txt'
+writing manifest file 'robot_square.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/marco/ros2_ws/install/robot_square/lib/python3.12/site-packages/robot-square.egg-link (link to .)
+Installing talker script to /home/marco/ros2_ws/install/robot_square/lib/robot_square
+
+Installed /home/marco/ros2_ws/build/robot_square
+running symlink_data
+symbolically linking /home/marco/ros2_ws/build/robot_square/resource/robot_square -> /home/marco/ros2_ws/install/robot_square/share/ament_index/resource_index/packages
+symbolically linking /home/marco/ros2_ws/build/robot_square/package.xml -> /home/marco/ros2_ws/install/robot_square/share/robot_square
+symbolically linking /home/marco/ros2_ws/build/robot_square/robot_square/launch/robot.launch.py -> /home/marco/ros2_ws/install/robot_square/share/robot_square/launch
+symbolically linking /home/marco/ros2_ws/build/robot_square/robot_square/urdf/robot.urdf -> /home/marco/ros2_ws/install/robot_square/share/robot_square/urdf
+symbolically linking /home/marco/ros2_ws/build/robot_square/robot_square/rviz/view.rviz -> /home/marco/ros2_ws/install/robot_square/share/robot_square/rviz

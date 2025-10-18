@@ -1,0 +1,30 @@
+running develop
+running egg_info
+writing ../../build/prova_gz/prova_gz.egg-info/PKG-INFO
+writing dependency_links to ../../build/prova_gz/prova_gz.egg-info/dependency_links.txt
+writing requirements to ../../build/prova_gz/prova_gz.egg-info/requires.txt
+writing top-level names to ../../build/prova_gz/prova_gz.egg-info/top_level.txt
+reading manifest file '../../build/prova_gz/prova_gz.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/prova_gz/prova_gz.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /home/marco/ros2_ws/install/prova_gz/lib/python3.12/site-packages/prova_gz
+copying /home/marco/ros2_ws/build/prova_gz/build/lib/prova_gz/__init__.py -> /home/marco/ros2_ws/install/prova_gz/lib/python3.12/site-packages/prova_gz
+byte-compiling /home/marco/ros2_ws/install/prova_gz/lib/python3.12/site-packages/prova_gz/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/marco/ros2_ws/install/prova_gz/share/ament_index
+creating /home/marco/ros2_ws/install/prova_gz/share/ament_index/resource_index
+creating /home/marco/ros2_ws/install/prova_gz/share/ament_index/resource_index/packages
+copying resource/prova_gz -> /home/marco/ros2_ws/install/prova_gz/share/ament_index/resource_index/packages
+copying package.xml -> /home/marco/ros2_ws/install/prova_gz/share/prova_gz
+creating /home/marco/ros2_ws/install/prova_gz/share/prova_gz/launch
+copying prova_gz/launch/gz_prova.launch.py -> /home/marco/ros2_ws/install/prova_gz/share/prova_gz/launch
+creating /home/marco/ros2_ws/install/prova_gz/share/prova_gz/urdf
+copying prova_gz/urdf/robot.urdf -> /home/marco/ros2_ws/install/prova_gz/share/prova_gz/urdf
+running install_egg_info
+Copying ../../build/prova_gz/prova_gz.egg-info to /home/marco/ros2_ws/install/prova_gz/lib/python3.12/site-packages/prova_gz-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/marco/ros2_ws/build/prova_gz/install.log'

@@ -1,1 +1,0 @@
-/home/marco/ros2_ws/src/ros_tutorials/turtlesim/msg/Color.msg

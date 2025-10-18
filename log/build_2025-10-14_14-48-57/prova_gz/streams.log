@@ -1,0 +1,34 @@
+[0.933s] Invoking command in '/home/marco/ros2_ws/build/prova_gz': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/marco/ros2_ws/build/prova_gz/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marco/ros2_ws/install/prova_gz/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/marco/ros2_ws/build/prova_gz/build
+[1.114s] running develop
+[1.241s] Invoked command in '/home/marco/ros2_ws/build/prova_gz' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/marco/ros2_ws/build/prova_gz/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marco/ros2_ws/install/prova_gz/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/marco/ros2_ws/build/prova_gz/build
+[1.242s] Invoking command in '/home/marco/ros2_ws/src/prova_gz': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/marco/ros2_ws/build/prova_gz/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marco/ros2_ws/install/prova_gz/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/prova_gz build --build-base /home/marco/ros2_ws/build/prova_gz/build install --record /home/marco/ros2_ws/build/prova_gz/install.log --single-version-externally-managed install_data --force
+[1.384s] running egg_info
+[1.393s] writing ../../build/prova_gz/prova_gz.egg-info/PKG-INFO
+[1.393s] writing dependency_links to ../../build/prova_gz/prova_gz.egg-info/dependency_links.txt
+[1.393s] writing requirements to ../../build/prova_gz/prova_gz.egg-info/requires.txt
+[1.393s] writing top-level names to ../../build/prova_gz/prova_gz.egg-info/top_level.txt
+[1.412s] reading manifest file '../../build/prova_gz/prova_gz.egg-info/SOURCES.txt'
+[1.412s] adding license file 'LICENSE'
+[1.412s] writing manifest file '../../build/prova_gz/prova_gz.egg-info/SOURCES.txt'
+[1.412s] running build
+[1.412s] running build_py
+[1.412s] running install
+[1.416s] running install_lib
+[1.425s] creating /home/marco/ros2_ws/install/prova_gz/lib/python3.12/site-packages/prova_gz
+[1.425s] copying /home/marco/ros2_ws/build/prova_gz/build/lib/prova_gz/__init__.py -> /home/marco/ros2_ws/install/prova_gz/lib/python3.12/site-packages/prova_gz
+[1.425s] byte-compiling /home/marco/ros2_ws/install/prova_gz/lib/python3.12/site-packages/prova_gz/__init__.py to __init__.cpython-312.pyc
+[1.425s] running install_data
+[1.425s] creating /home/marco/ros2_ws/install/prova_gz/share/ament_index
+[1.425s] creating /home/marco/ros2_ws/install/prova_gz/share/ament_index/resource_index
+[1.425s] creating /home/marco/ros2_ws/install/prova_gz/share/ament_index/resource_index/packages
+[1.425s] copying resource/prova_gz -> /home/marco/ros2_ws/install/prova_gz/share/ament_index/resource_index/packages
+[1.425s] copying package.xml -> /home/marco/ros2_ws/install/prova_gz/share/prova_gz
+[1.425s] creating /home/marco/ros2_ws/install/prova_gz/share/prova_gz/launch
+[1.425s] copying prova_gz/launch/gz_prova.launch.py -> /home/marco/ros2_ws/install/prova_gz/share/prova_gz/launch
+[1.426s] creating /home/marco/ros2_ws/install/prova_gz/share/prova_gz/urdf
+[1.426s] copying prova_gz/urdf/robot.urdf -> /home/marco/ros2_ws/install/prova_gz/share/prova_gz/urdf
+[1.426s] running install_egg_info
+[1.435s] Copying ../../build/prova_gz/prova_gz.egg-info to /home/marco/ros2_ws/install/prova_gz/lib/python3.12/site-packages/prova_gz-0.0.0-py3.12.egg-info
+[1.436s] running install_scripts
+[1.500s] writing list of installed files to '/home/marco/ros2_ws/build/prova_gz/install.log'
+[1.515s] Invoked command in '/home/marco/ros2_ws/src/prova_gz' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/marco/ros2_ws/build/prova_gz/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marco/ros2_ws/install/prova_gz/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/prova_gz build --build-base /home/marco/ros2_ws/build/prova_gz/build install --record /home/marco/ros2_ws/build/prova_gz/install.log --single-version-externally-managed install_data --force

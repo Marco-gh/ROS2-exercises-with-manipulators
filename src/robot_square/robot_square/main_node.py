@@ -3,16 +3,16 @@ from rclpy.node import Node
 
 from sensor_msgs.msg import JointState
 
-from math import pi, degrees
+from math import pi, degrees, sin, cos
 
 from robot_square.utils.inv_kin import inverse_kin_plan_3dof
-from robot_square.utils.interpol import interpolator
+from robot_square.utils.interpol import linear_interpolator
 
 class AnglePublisher(Node):
     def __init__(self):
         super().__init__('angle_publisher')
         self.publisher = self.create_publisher(JointState,'joint_states',10)
-        timer_per = 0.15
+        timer_per = 0.05
         n = 25 # Numero campioni per interpolazione
         self.timer = self.create_timer(timer_per,self.timer_callback)
 
@@ -26,21 +26,41 @@ class AnglePublisher(Node):
 
         self.j = 0
 
-        # Quadrato centrato in (x0,y0) con lato l
-        l = 0.3
-        h = l/2
-        x0 = 0.25
-        y0 = 0.25
+        # 1 to draw a square
+        # 0 to draw a circle
+        square = 0
 
-        p1 = (x0-h,y0-h)
-        p2 = (x0+h,y0-h)
-        p3 = (x0+h,y0+h)
-        p4 = (x0-h,y0+h)
-        # self.sq = [p1,p2,p3,p4] # Solo i vertici del quadrato
-        self.sq = interpolator(p1,p2,n)
-        self.sq.extend(interpolator(p2,p3,n))
-        self.sq.extend(interpolator(p3,p4,n))
-        self.sq.extend(interpolator(p4,p1,n))
+        self.sq = []
+
+        if square:
+            # Quadrato centrato in (x0,y0) con lato l
+            l = 0.4
+            h = l/2
+            x0 = 0.3
+            y0 = 0.3
+            #Vertici quadrato
+            p1 = (x0-h,y0-h)
+            p2 = (x0+h,y0-h)
+            p3 = (x0+h,y0+h)
+            p4 = (x0-h,y0+h)
+            # self.sq = [p1,p2,p3,p4] # Solo i vertici del quadrato
+            self.sq = linear_interpolator(p1,p2,n)
+            self.sq.extend(linear_interpolator(p2,p3,n))
+            self.sq.extend(linear_interpolator(p3,p4,n))
+            self.sq.extend(linear_interpolator(p4,p1,n))
+        else:
+            r = 0.3
+            c = (0.6,0.6)
+            # Numero di punti sulla circonferenza
+            n_circ = 180
+            # Incremento angolo per punto
+            incr = 2*pi/n_circ
+            ang = 0
+            for _ in range(0,n_circ):
+                p = (c[0]+r*cos(ang),c[1]+r*sin(ang))
+                self.sq.append(p)
+                ang += incr
+            
 
     def timer_callback(self):
         msg = JointState()

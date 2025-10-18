@@ -1,0 +1,37 @@
+[0.938s] Invoking command in '/home/marco/ros2_ws/src/robot_square': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/marco/ros2_ws/build/robot_square/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marco/ros2_ws/install/robot_square/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_square build --build-base /home/marco/ros2_ws/build/robot_square/build install --record /home/marco/ros2_ws/build/robot_square/install.log --single-version-externally-managed install_data
+[1.092s] running egg_info
+[1.102s] writing ../../build/robot_square/robot_square.egg-info/PKG-INFO
+[1.102s] writing dependency_links to ../../build/robot_square/robot_square.egg-info/dependency_links.txt
+[1.102s] writing entry points to ../../build/robot_square/robot_square.egg-info/entry_points.txt
+[1.102s] writing requirements to ../../build/robot_square/robot_square.egg-info/requires.txt
+[1.102s] writing top-level names to ../../build/robot_square/robot_square.egg-info/top_level.txt
+[1.123s] reading manifest file '../../build/robot_square/robot_square.egg-info/SOURCES.txt'
+[1.123s] adding license file 'LICENSE'
+[1.123s] writing manifest file '../../build/robot_square/robot_square.egg-info/SOURCES.txt'
+[1.123s] running build
+[1.123s] running build_py
+[1.124s] running install
+[1.128s] running install_lib
+[1.138s] creating /home/marco/ros2_ws/install/robot_square/lib/python3.12/site-packages/robot_square
+[1.138s] copying /home/marco/ros2_ws/build/robot_square/build/lib/robot_square/__init__.py -> /home/marco/ros2_ws/install/robot_square/lib/python3.12/site-packages/robot_square
+[1.138s] copying /home/marco/ros2_ws/build/robot_square/build/lib/robot_square/main_node.py -> /home/marco/ros2_ws/install/robot_square/lib/python3.12/site-packages/robot_square
+[1.138s] byte-compiling /home/marco/ros2_ws/install/robot_square/lib/python3.12/site-packages/robot_square/__init__.py to __init__.cpython-312.pyc
+[1.138s] byte-compiling /home/marco/ros2_ws/install/robot_square/lib/python3.12/site-packages/robot_square/main_node.py to main_node.cpython-312.pyc
+[1.139s] running install_data
+[1.139s] creating /home/marco/ros2_ws/install/robot_square/share/ament_index
+[1.139s] creating /home/marco/ros2_ws/install/robot_square/share/ament_index/resource_index
+[1.139s] creating /home/marco/ros2_ws/install/robot_square/share/ament_index/resource_index/packages
+[1.139s] copying resource/robot_square -> /home/marco/ros2_ws/install/robot_square/share/ament_index/resource_index/packages
+[1.139s] copying package.xml -> /home/marco/ros2_ws/install/robot_square/share/robot_square
+[1.139s] creating /home/marco/ros2_ws/install/robot_square/share/robot_square/launch
+[1.139s] copying robot_square/launch/robot.launch.py -> /home/marco/ros2_ws/install/robot_square/share/robot_square/launch
+[1.139s] creating /home/marco/ros2_ws/install/robot_square/share/robot_square/urdf
+[1.139s] copying robot_square/urdf/robot.urdf -> /home/marco/ros2_ws/install/robot_square/share/robot_square/urdf
+[1.140s] creating /home/marco/ros2_ws/install/robot_square/share/robot_square/rviz
+[1.140s] copying robot_square/rviz/view.rviz -> /home/marco/ros2_ws/install/robot_square/share/robot_square/rviz
+[1.140s] running install_egg_info
+[1.150s] Copying ../../build/robot_square/robot_square.egg-info to /home/marco/ros2_ws/install/robot_square/lib/python3.12/site-packages/robot_square-0.0.0-py3.12.egg-info
+[1.151s] running install_scripts
+[1.223s] Installing talker script to /home/marco/ros2_ws/install/robot_square/lib/robot_square
+[1.223s] writing list of installed files to '/home/marco/ros2_ws/build/robot_square/install.log'
+[1.247s] Invoked command in '/home/marco/ros2_ws/src/robot_square' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/marco/ros2_ws/build/robot_square/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marco/ros2_ws/install/robot_square/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_square build --build-base /home/marco/ros2_ws/build/robot_square/build install --record /home/marco/ros2_ws/build/robot_square/install.log --single-version-externally-managed install_data

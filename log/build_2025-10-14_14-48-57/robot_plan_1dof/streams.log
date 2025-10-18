@@ -1,0 +1,41 @@
+[0.938s] Invoking command in '/home/marco/ros2_ws/src/robot_plan_1dof': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/marco/ros2_ws/build/robot_plan_1dof/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marco/ros2_ws/install/robot_plan_1dof/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_plan_1dof build --build-base /home/marco/ros2_ws/build/robot_plan_1dof/build install --record /home/marco/ros2_ws/build/robot_plan_1dof/install.log --single-version-externally-managed install_data
+[1.095s] running egg_info
+[1.105s] writing ../../build/robot_plan_1dof/robot_plan_1dof.egg-info/PKG-INFO
+[1.105s] writing dependency_links to ../../build/robot_plan_1dof/robot_plan_1dof.egg-info/dependency_links.txt
+[1.105s] writing entry points to ../../build/robot_plan_1dof/robot_plan_1dof.egg-info/entry_points.txt
+[1.105s] writing requirements to ../../build/robot_plan_1dof/robot_plan_1dof.egg-info/requires.txt
+[1.105s] writing top-level names to ../../build/robot_plan_1dof/robot_plan_1dof.egg-info/top_level.txt
+[1.126s] reading manifest file '../../build/robot_plan_1dof/robot_plan_1dof.egg-info/SOURCES.txt'
+[1.126s] adding license file 'LICENSE'
+[1.126s] writing manifest file '../../build/robot_plan_1dof/robot_plan_1dof.egg-info/SOURCES.txt'
+[1.126s] running build
+[1.126s] running build_py
+[1.126s] running install
+[1.131s] running install_lib
+[1.141s] creating /home/marco/ros2_ws/install/robot_plan_1dof/lib/python3.12/site-packages/robot_plan_1dof
+[1.141s] copying /home/marco/ros2_ws/build/robot_plan_1dof/build/lib/robot_plan_1dof/publisher_function.py -> /home/marco/ros2_ws/install/robot_plan_1dof/lib/python3.12/site-packages/robot_plan_1dof
+[1.141s] copying /home/marco/ros2_ws/build/robot_plan_1dof/build/lib/robot_plan_1dof/__init__.py -> /home/marco/ros2_ws/install/robot_plan_1dof/lib/python3.12/site-packages/robot_plan_1dof
+[1.141s] copying /home/marco/ros2_ws/build/robot_plan_1dof/build/lib/robot_plan_1dof/subscriber_function.py -> /home/marco/ros2_ws/install/robot_plan_1dof/lib/python3.12/site-packages/robot_plan_1dof
+[1.141s] byte-compiling /home/marco/ros2_ws/install/robot_plan_1dof/lib/python3.12/site-packages/robot_plan_1dof/publisher_function.py to publisher_function.cpython-312.pyc
+[1.142s] byte-compiling /home/marco/ros2_ws/install/robot_plan_1dof/lib/python3.12/site-packages/robot_plan_1dof/__init__.py to __init__.cpython-312.pyc
+[1.142s] byte-compiling /home/marco/ros2_ws/install/robot_plan_1dof/lib/python3.12/site-packages/robot_plan_1dof/subscriber_function.py to subscriber_function.cpython-312.pyc
+[1.142s] running install_data
+[1.142s] creating /home/marco/ros2_ws/install/robot_plan_1dof/share/ament_index
+[1.142s] creating /home/marco/ros2_ws/install/robot_plan_1dof/share/ament_index/resource_index
+[1.142s] creating /home/marco/ros2_ws/install/robot_plan_1dof/share/ament_index/resource_index/packages
+[1.142s] copying resource/robot_plan_1dof -> /home/marco/ros2_ws/install/robot_plan_1dof/share/ament_index/resource_index/packages
+[1.143s] copying package.xml -> /home/marco/ros2_ws/install/robot_plan_1dof/share/robot_plan_1dof
+[1.143s] creating /home/marco/ros2_ws/install/robot_plan_1dof/share/robot_plan_1dof/launch
+[1.143s] copying robot_plan_1dof/launch/plan.launch.py -> /home/marco/ros2_ws/install/robot_plan_1dof/share/robot_plan_1dof/launch
+[1.143s] creating /home/marco/ros2_ws/install/robot_plan_1dof/share/robot_plan_1dof/urdf
+[1.143s] copying robot_plan_1dof/urdf/robot_plan.urdf -> /home/marco/ros2_ws/install/robot_plan_1dof/share/robot_plan_1dof/urdf
+[1.143s] creating /home/marco/ros2_ws/install/robot_plan_1dof/share/robot_plan_1dof/rviz
+[1.143s] copying robot_plan_1dof/rviz/view.rviz -> /home/marco/ros2_ws/install/robot_plan_1dof/share/robot_plan_1dof/rviz
+[1.143s] copying robot_plan_1dof/rviz/test.rviz -> /home/marco/ros2_ws/install/robot_plan_1dof/share/robot_plan_1dof/rviz
+[1.143s] running install_egg_info
+[1.154s] Copying ../../build/robot_plan_1dof/robot_plan_1dof.egg-info to /home/marco/ros2_ws/install/robot_plan_1dof/lib/python3.12/site-packages/robot_plan_1dof-0.0.0-py3.12.egg-info
+[1.154s] running install_scripts
+[1.228s] Installing listener script to /home/marco/ros2_ws/install/robot_plan_1dof/lib/robot_plan_1dof
+[1.228s] Installing talker script to /home/marco/ros2_ws/install/robot_plan_1dof/lib/robot_plan_1dof
+[1.228s] writing list of installed files to '/home/marco/ros2_ws/build/robot_plan_1dof/install.log'
+[1.252s] Invoked command in '/home/marco/ros2_ws/src/robot_plan_1dof' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/marco/ros2_ws/build/robot_plan_1dof/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/marco/ros2_ws/install/robot_plan_1dof/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_plan_1dof build --build-base /home/marco/ros2_ws/build/robot_plan_1dof/build install --record /home/marco/ros2_ws/build/robot_plan_1dof/install.log --single-version-externally-managed install_data
