@@ -1,1 +1,0 @@
-/home/marco/ros2_ws/src/urdf_tutorial/launch/display.launch.py

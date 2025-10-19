@@ -1,13 +1,6 @@
 package.xml
 setup.cfg
 setup.py
-../../build/6dof_package/6dof_package.egg-info/PKG-INFO
-../../build/6dof_package/6dof_package.egg-info/SOURCES.txt
-../../build/6dof_package/6dof_package.egg-info/dependency_links.txt
-../../build/6dof_package/6dof_package.egg-info/entry_points.txt
-../../build/6dof_package/6dof_package.egg-info/requires.txt
-../../build/6dof_package/6dof_package.egg-info/top_level.txt
-../../build/6dof_package/6dof_package.egg-info/zip-safe
 6dof_package/6dof_node.py
 6dof_package/__init__.py
 6dof_package.egg-info/PKG-INFO

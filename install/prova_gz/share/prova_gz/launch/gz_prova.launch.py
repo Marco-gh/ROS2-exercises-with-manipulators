@@ -1,1 +1,0 @@
-/home/marco/ros2_ws/build/prova_gz/prova_gz/launch/gz_prova.launch.py

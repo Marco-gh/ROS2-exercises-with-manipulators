@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_files("/home/marco/ros2_ws/src/ros_tutorials/turtlesim" FILES "/home/marco/ros2_ws/build/turtlesim/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/turtlesim/cmake")

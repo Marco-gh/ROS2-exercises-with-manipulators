@@ -1,13 +1,6 @@
 package.xml
 setup.cfg
 setup.py
-../../build/robot_square/robot_square.egg-info/PKG-INFO
-../../build/robot_square/robot_square.egg-info/SOURCES.txt
-../../build/robot_square/robot_square.egg-info/dependency_links.txt
-../../build/robot_square/robot_square.egg-info/entry_points.txt
-../../build/robot_square/robot_square.egg-info/requires.txt
-../../build/robot_square/robot_square.egg-info/top_level.txt
-../../build/robot_square/robot_square.egg-info/zip-safe
 resource/robot_square
 robot_square/__init__.py
 robot_square/main_node.py

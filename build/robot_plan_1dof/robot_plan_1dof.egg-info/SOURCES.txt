@@ -1,13 +1,6 @@
 package.xml
 setup.cfg
 setup.py
-../../build/robot_plan_1dof/robot_plan_1dof.egg-info/PKG-INFO
-../../build/robot_plan_1dof/robot_plan_1dof.egg-info/SOURCES.txt
-../../build/robot_plan_1dof/robot_plan_1dof.egg-info/dependency_links.txt
-../../build/robot_plan_1dof/robot_plan_1dof.egg-info/entry_points.txt
-../../build/robot_plan_1dof/robot_plan_1dof.egg-info/requires.txt
-../../build/robot_plan_1dof/robot_plan_1dof.egg-info/top_level.txt
-../../build/robot_plan_1dof/robot_plan_1dof.egg-info/zip-safe
 resource/robot_plan_1dof
 robot_plan_1dof/__init__.py
 robot_plan_1dof/publisher_function.py

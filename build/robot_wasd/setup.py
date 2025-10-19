@@ -1,1 +1,1 @@
-/home/marco/ros2_ws/src/robot_wasd/setup.py
+/home/marco/ROS2-exercises-with-manipulators/src/robot_wasd/setup.py

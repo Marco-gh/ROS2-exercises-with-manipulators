@@ -1,1 +1,1 @@
-/home/marco/ros2_ws/build/prova_gz/prova_gz/launch/gz.launch.py
+/home/marco/ROS2-exercises-with-manipulators/build/prova_gz/prova_gz/launch/gz.launch.py

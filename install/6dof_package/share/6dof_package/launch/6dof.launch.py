@@ -1,1 +1,1 @@
-/home/marco/ros2_ws/build/6dof_package/6dof_package/launch/6dof.launch.py
+/home/marco/ROS2-exercises-with-manipulators/build/6dof_package/6dof_package/launch/6dof.launch.py

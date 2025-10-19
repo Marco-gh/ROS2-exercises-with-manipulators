@@ -1,1 +1,1 @@
-/home/marco/ros2_ws/src/prova_gz/setup.py
+/home/marco/ROS2-exercises-with-manipulators/src/prova_gz/setup.py

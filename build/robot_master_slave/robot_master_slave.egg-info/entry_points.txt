@@ -1,2 +1,0 @@
-[console_scripts]
-slave = robot_master_slave.master_node:main

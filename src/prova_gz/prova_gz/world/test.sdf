@@ -52,10 +52,11 @@
 
     <!-- robot incluso -->
     <include>
-      <uri>file:///home/marco/ros2_ws/install/prova_gz/share/prova_gz/urdf/robot_converted.sdf</uri>
+      <uri>file:///home/marco/ROS2-exercises-with-manipulators/install/prova_gz/share/prova_gz/urdf/robot_converted.sdf</uri>
       <name>planar_arm_LASEDE</name>
       <pose>0 0 0 0 0 0</pose>
     </include>
+
 
     <!-- ancora world ↔ base_link -->
     <joint name="anchor_base" type="fixed">

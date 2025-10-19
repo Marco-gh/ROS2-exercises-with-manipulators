@@ -1,0 +1,19 @@
+# Ignora le directory generate automaticamente
+build/
+install/
+log/
+
+# File temporanei o locali
+*.pyc
+__pycache__/
+*.swp
+*.swo
+
+# File di backup o configurazioni locali
+*.bak
+*.tmp
+*.DS_Store
+
+# Cartelle specifiche dell'IDE
+.vscode/
+.idea/

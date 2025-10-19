@@ -1,1 +1,1 @@
-prepend-non-duplicate;PYTHONPATH;/home/marco/ros2_ws/build/robot_wasd
+prepend-non-duplicate;PYTHONPATH;/home/marco/ROS2-exercises-with-manipulators/build/robot_wasd

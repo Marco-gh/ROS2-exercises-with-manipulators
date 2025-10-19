@@ -1,12 +1,6 @@
 package.xml
 setup.cfg
 setup.py
-../../build/prova_gz/prova_gz.egg-info/PKG-INFO
-../../build/prova_gz/prova_gz.egg-info/SOURCES.txt
-../../build/prova_gz/prova_gz.egg-info/dependency_links.txt
-../../build/prova_gz/prova_gz.egg-info/requires.txt
-../../build/prova_gz/prova_gz.egg-info/top_level.txt
-../../build/prova_gz/prova_gz.egg-info/zip-safe
 prova_gz/__init__.py
 prova_gz.egg-info/PKG-INFO
 prova_gz.egg-info/SOURCES.txt
@@ -15,7 +9,6 @@ prova_gz.egg-info/requires.txt
 prova_gz.egg-info/top_level.txt
 prova_gz.egg-info/zip-safe
 prova_gz/launch/gz.launch.py
-prova_gz/urdf/robot.urdf
 prova_gz/urdf/robot_converted.sdf
 prova_gz/world/test.sdf
 resource/prova_gz

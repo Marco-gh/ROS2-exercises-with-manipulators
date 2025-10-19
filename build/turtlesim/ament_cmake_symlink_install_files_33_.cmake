@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_files("/home/marco/ros2_ws/src/ros_tutorials/turtlesim" FILES "/opt/ros/kilted/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/turtlesim/environment")
