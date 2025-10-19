@@ -1,1 +1,0 @@
-/home/marco/ROS2-exercises-with-manipulators/src/6dof_package/setup.py

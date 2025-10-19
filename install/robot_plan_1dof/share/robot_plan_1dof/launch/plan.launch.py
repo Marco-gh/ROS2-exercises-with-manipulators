@@ -1,1 +1,0 @@
-/home/marco/ROS2-exercises-with-manipulators/build/robot_plan_1dof/robot_plan_1dof/launch/plan.launch.py

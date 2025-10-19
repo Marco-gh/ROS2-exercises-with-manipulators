@@ -1,1 +1,0 @@
-/home/marco/ROS2-exercises-with-manipulators/build/robot_wasd/robot_wasd/launch/rob.launch.py
