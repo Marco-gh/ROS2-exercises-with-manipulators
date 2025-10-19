@@ -1,0 +1,409 @@
+<sdf version='1.11'>
+  <model name='six_dof_arm'>
+    <link name='base_link'>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 0.050000000000000003 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.29999999999999999 0.29999999999999999 0.10000000000000001</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0.050000000000000003 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.29999999999999999 0.29999999999999999 0.10000000000000001</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>0.75000006 0.75000006 0.75000006 1</diffuse>
+          <ambient>0.75000006 0.75000006 0.75000006 1</ambient>
+        </material>
+      </visual>
+    </link>
+
+    <joint name='joint1' type='revolute'>
+      <pose relative_to='base_link'>0 0 0.10000000000000001 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>link1</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-3.1415999999999999</lower>
+          <upper>3.1415999999999999</upper>
+          <effort>100</effort>
+          <velocity>2</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <link name='link1'>
+      <pose relative_to='joint1'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+      <collision name='link1_collision'>
+        <pose>0 0 0.050000000000000003 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.10000000000000001</length>
+            <radius>0.040000000000000001</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='link1_visual'>
+        <pose>0 0 0.050000000000000003 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.10000000000000001</length>
+            <radius>0.040000000000000001</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.25 0.37500003 1 1</diffuse>
+          <ambient>0.25 0.37500003 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+
+    <joint name='joint2' type='revolute'>
+      <pose relative_to='link1'>0 0 0.10000000000000001 0 0 0</pose>
+      <parent>link1</parent>
+      <child>link2</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-2.3561999999999999</lower>
+          <upper>2.3561999999999999</upper>
+          <effort>80</effort>
+          <velocity>2</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <link name='link2'>
+      <pose relative_to='joint2'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+      <collision name='link2_collision'>
+        <pose>0.14999999999999999 0 0 0 1.5707963267948966 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.29999999999999999</length>
+            <radius>0.029999999999999999</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='link2_visual'>
+        <pose>0.14999999999999999 0 0 0 1.5707963267948966 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.29999999999999999</length>
+            <radius>0.029999999999999999</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.75000006 0.75000006 0.75000006 1</diffuse>
+          <ambient>0.75000006 0.75000006 0.75000006 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='joint3' type='revolute'>
+      <pose relative_to='link2'>0.29999999999999999 0 0 0 0 0</pose>
+      <parent>link2</parent>
+      <child>link3</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-2.3561999999999999</lower>
+          <upper>2.3561999999999999</upper>
+          <effort>80</effort>
+          <velocity>2</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='link3'>
+      <pose relative_to='joint3'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+      <collision name='link3_collision'>
+        <pose>0.14999999999999999 0 0 0 1.5707963267948966 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.29999999999999999</length>
+            <radius>0.028000000000000001</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='link3_visual'>
+        <pose>0.14999999999999999 0 0 0 1.5707963267948966 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.29999999999999999</length>
+            <radius>0.028000000000000001</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.25 0.37500003 1 1</diffuse>
+          <ambient>0.25 0.37500003 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='joint4' type='revolute'>
+      <pose relative_to='link3'>0.29999999999999999 0 0 0 0 0</pose>
+      <parent>link3</parent>
+      <child>link4</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-3.1415999999999999</lower>
+          <upper>3.1415999999999999</upper>
+          <effort>50</effort>
+          <velocity>3</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='link4'>
+      <pose relative_to='joint4'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+      <collision name='link4_collision'>
+        <pose>0.10000000000000001 0 0 0 1.5707963267948966 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.20000000000000001</length>
+            <radius>0.025000000000000001</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='link4_visual'>
+        <pose>0.10000000000000001 0 0 0 1.5707963267948966 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.20000000000000001</length>
+            <radius>0.025000000000000001</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.75000006 0.75000006 0.75000006 1</diffuse>
+          <ambient>0.75000006 0.75000006 0.75000006 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='joint5' type='revolute'>
+      <pose relative_to='link4'>0.20000000000000001 0 0 0 0 0</pose>
+      <parent>link4</parent>
+      <child>link5</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-3.1415999999999999</lower>
+          <upper>3.1415999999999999</upper>
+          <effort>40</effort>
+          <velocity>3</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='link5'>
+      <pose relative_to='joint5'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+      <collision name='link5_collision'>
+        <pose>0.050000000000000003 0 0 0 1.5707963267948966 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.10000000000000001</length>
+            <radius>0.021999999999999999</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='link5_visual'>
+        <pose>0.050000000000000003 0 0 0 1.5707963267948966 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.10000000000000001</length>
+            <radius>0.021999999999999999</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.25 0.37500003 1 1</diffuse>
+          <ambient>0.25 0.37500003 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='joint6' type='revolute'>
+      <pose relative_to='link5'>0.10000000000000001 0 0 0 0 0</pose>
+      <parent>link5</parent>
+      <child>tool0</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-3.1415999999999999</lower>
+          <upper>3.1415999999999999</upper>
+          <effort>30</effort>
+          <velocity>4</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='tool0'>
+      <pose relative_to='joint6'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+      <collision name='tool0_collision'>
+        <pose>0 0 0.050000000000000003 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.10000000000000001</length>
+            <radius>0.02</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='tool0_visual'>
+        <pose>0 0 0.050000000000000003 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.10000000000000001</length>
+            <radius>0.02</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.75000006 0.75000006 0.75000006 1</diffuse>
+          <ambient>0.75000006 0.75000006 0.75000006 1</ambient>
+        </material>
+      </visual>
+    </link>
+
+    <!-- Controller plugin -->
+    <plugin filename="gz-sim-joint-position-controller-system"
+            name="gz::sim::systems::JointPositionController">
+      <joint_name>joint1</joint_name>
+      <topic>/model/planar_arm/joint/joint1/cmd_pos</topic>
+    </plugin>
+
+    <plugin filename="gz-sim-joint-position-controller-system"
+            name="gz::sim::systems::JointPositionController">
+      <joint_name>joint2</joint_name>
+      <topic>/model/planar_arm/joint/joint2/cmd_pos</topic>
+    </plugin>
+
+    <plugin filename="gz-sim-joint-position-controller-system"
+            name="gz::sim::systems::JointPositionController">
+      <joint_name>joint3</joint_name>
+      <topic>/model/planar_arm/joint/joint3/cmd_pos</topic>
+    </plugin>
+
+    <plugin filename="gz-sim-joint-position-controller-system"
+            name="gz::sim::systems::JointPositionController">
+      <joint_name>joint4</joint_name>
+      <topic>/model/planar_arm/joint/joint4/cmd_pos</topic>
+    </plugin>
+
+    <plugin filename="gz-sim-joint-position-controller-system"
+            name="gz::sim::systems::JointPositionController">
+      <joint_name>joint5</joint_name>
+      <topic>/model/planar_arm/joint/joint5/cmd_pos</topic>
+    </plugin>
+
+    <plugin filename="gz-sim-joint-position-controller-system"
+            name="gz::sim::systems::JointPositionController">
+      <joint_name>joint6</joint_name>
+      <topic>/model/planar_arm/joint/joint6/cmd_pos</topic>
+    </plugin>
+  </model>
+</sdf>

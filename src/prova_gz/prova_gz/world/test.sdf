@@ -52,7 +52,7 @@
 
     <!-- robot incluso -->
     <include>
-      <uri>file:///home/marco/ROS2-exercises-with-manipulators/install/prova_gz/share/prova_gz/urdf/robot_converted.sdf</uri>
+      <uri>file:///home/marco/ROS2-exercises-with-manipulators/src/prova_gz/prova_gz/urdf/robot_converted2.sdf</uri>
       <name>planar_arm_LASEDE</name>
       <pose>0 0 0 0 0 0</pose>
     </include>
@@ -69,16 +69,16 @@
       <static>true</static>
       <link name="link_box">
         <visual name="visual">
-          <pose>3 0 0 0 0 0</pose>
+          <pose>1.75 0 0 0 0 0</pose>
             <geometry>
               <box>
-                <size>4 4 4</size>
+                <size>2.5 1.5 0.6</size>
               </box>
             </geometry>
         </visual>
         <collision name="collision">
           <geometry>
-            <box><size>4 4 4</size></box>
+            <box><size>2.5 1.5 0.6</size></box>
           </geometry>
         </collision>
       </link>
