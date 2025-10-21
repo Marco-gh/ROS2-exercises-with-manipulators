@@ -52,8 +52,8 @@
 
     <!-- robot incluso -->
     <include>
-      <uri>file:///home/marco/ROS2-exercises-with-manipulators/src/prova_gz/prova_gz/urdf/robot_converted2.sdf</uri>
-      <name>planar_arm_LASEDE</name>
+      <uri>file:///home/marco/ROS2-exercises-with-manipulators/src/bridge_test_gz/bridge_test_gz/urdf/robot_converted2.sdf</uri>
+      <name>planar_arm</name>
       <pose>0 0 0 0 0 0</pose>
     </include>
 
@@ -61,7 +61,7 @@
     <!-- ancora world ↔ base_link -->
     <joint name="anchor_base" type="fixed">
       <parent>world</parent>
-      <child>planar_arm_LASEDE::base_link</child>
+      <child>planar_arm::base_link</child>
     </joint>
 
     <!-- tavolo da ping pong -->
@@ -89,18 +89,6 @@
       <parent>world</parent>
       <child>box::link_box</child>
     </joint>
-
-    <state world_name="anchored">
-      <model name="planar_arm_LASEDE">
-        <joint name="joint1">
-          <angle axis="0 1 0">1.57079632679</angle>
-        </joint>
-        <!-- opzionale:
-        <joint name="joint2"><angle>0.0</angle></joint>
-        <joint name="joint3"><angle>0.0</angle></joint>
-        -->
-      </model>
-    </state>
 
   </world>
 </sdf>

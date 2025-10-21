@@ -370,40 +370,67 @@
     </link>
 
     <!-- Controller plugin -->
-    <plugin filename="gz-sim-joint-position-controller-system"
+    <plugin filename="libgz-sim-joint-position-controller-system.so"
             name="gz::sim::systems::JointPositionController">
       <joint_name>joint1</joint_name>
-      <topic>/model/planar_arm/joint/joint1/cmd_pos</topic>
+      <topic>/joint1_pos_cmd</topic>
     </plugin>
 
-    <plugin filename="gz-sim-joint-position-controller-system"
+    <plugin filename="libgz-sim-joint-position-controller-system.so"
             name="gz::sim::systems::JointPositionController">
       <joint_name>joint2</joint_name>
-      <topic>/model/planar_arm/joint/joint2/cmd_pos</topic>
+      <topic>/joint2_pos_cmd</topic>
     </plugin>
 
-    <plugin filename="gz-sim-joint-position-controller-system"
+    <plugin filename="libgz-sim-joint-position-controller-system.so"
             name="gz::sim::systems::JointPositionController">
       <joint_name>joint3</joint_name>
-      <topic>/model/planar_arm/joint/joint3/cmd_pos</topic>
+      <topic>/joint3_pos_cmd</topic>
     </plugin>
 
-    <plugin filename="gz-sim-joint-position-controller-system"
+    <plugin filename="libgz-sim-joint-position-controller-system.so"
             name="gz::sim::systems::JointPositionController">
       <joint_name>joint4</joint_name>
-      <topic>/model/planar_arm/joint/joint4/cmd_pos</topic>
+      <topic>/joint4_pos_cmd</topic>
     </plugin>
 
-    <plugin filename="gz-sim-joint-position-controller-system"
+    <plugin filename="libgz-sim-joint-position-controller-system.so"
             name="gz::sim::systems::JointPositionController">
       <joint_name>joint5</joint_name>
-      <topic>/model/planar_arm/joint/joint5/cmd_pos</topic>
+      <topic>/joint5_pos_cmd</topic>
     </plugin>
 
-    <plugin filename="gz-sim-joint-position-controller-system"
+    <plugin filename="libgz-sim-joint-position-controller-system.so"
             name="gz::sim::systems::JointPositionController">
       <joint_name>joint6</joint_name>
-      <topic>/model/planar_arm/joint/joint6/cmd_pos</topic>
+      <topic>/joint6_pos_cmd</topic>
     </plugin>
+    
+    <plugin filename="libgz-sim-joint-state-publisher-system.so"
+            name="gz::sim::systems::JointStatePublisher">
+        <joint_name>joint1</joint_name>
+        <joint_name>joint2</joint_name>
+        <joint_name>joint3</joint_name>
+        <joint_name>joint4</joint_name>
+        <joint_name>joint5</joint_name>
+        <joint_name>joint6</joint_name>
+        <topic>joint_states</topic> 
+    </plugin>
+    
+    <plugin filename="libgz-sim-pose-publisher-system.so"
+            name="gz::sim::systems::PosePublisher">
+        <link_name>base_link</link_name>
+        <link_name>link1</link_name>
+        <link_name>link2</link_name>
+        <link_name>link3</link_name>
+        <link_name>link4</link_name>
+        <link_name>link5</link_name>
+        <link_name>tool0</link_name>
+        <topic>model/six_dof_arm/tf</topic> 
+        <publish_nested_model_pose>true</publish_nested_model_pose>
+        <publish_model_frame>true</publish_model_frame>
+    </plugin>
+
+
   </model>
 </sdf>
