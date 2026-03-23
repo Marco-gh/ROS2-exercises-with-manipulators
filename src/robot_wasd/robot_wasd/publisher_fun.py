@@ -15,12 +15,16 @@ class AnglesPublisher(Node):
         # Restituisce e salva gli attributi del terminale correnti,
         # così puoi ripristinarli dopo modifiche.
         # Con "ros2 launch..." non viene associato un vero e proprio tty al processo del nodo
-        # che rimane in background -> va lanciato con con "ros2 run..."
+        # che rimane in background -> va lanciato con con "ros2 run robot_wasd main_node" per avere un terminale associato e poter leggere
+        # i comandi da tastiera
+        # Va anche lanciato con "ros2 launch..." per testare la ricezione dei comandi da teleop_twist_keyboard.py (in questo caso non c'è
+        # un terminale associato e non si possono leggere i comandi da tastiera, ma si ricevono quelli pubblicati da teleop_twist_keyboard.py)
         if sys.stdin.isatty():
             fd = sys.stdin.fileno()
             try:
                 self.settings = termios.tcgetattr(fd)
                 self.create_timer(0.1,self.loop_keybrd)
+                self.get_logger().info("TTY detected: setting up keyboard input.")
             except termios.error as e:
                 self.get_logger().error(f"tcgetattr failed: {e}")
                 self.settings = None

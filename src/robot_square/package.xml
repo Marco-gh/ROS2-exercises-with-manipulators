@@ -3,7 +3,7 @@
 <package format="3">
   <name>robot_square</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>A simple manipulator capable of drawing a square or a circle on a plane using its working tip</description>
   <maintainer email="marcosilveri32@gmail.com">marco</maintainer>
   <license>Apache-2.0</license>
 

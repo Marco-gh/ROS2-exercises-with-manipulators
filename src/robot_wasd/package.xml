@@ -3,7 +3,7 @@
 <package format="3">
   <name>robot_wasd</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>A simple manipulator whose joints can be controlled using the WASD keys</description>
   <maintainer email="marcosilveri32@gmail.com">marco</maintainer>
   <license>Apache-2.0</license>
 

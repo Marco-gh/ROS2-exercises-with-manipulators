@@ -19,7 +19,7 @@ setup(
     zip_safe=True,
     maintainer='marco',
     maintainer_email='marcosilveri32@gmail.com',
-    description='TODO: Package description',
+    description='In this project, a simple manipulator is asked to draw a square or a circle on the horizontal plane.',
     license='Apache-2.0',
     extras_require={
         'test': [

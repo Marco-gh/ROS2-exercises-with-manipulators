@@ -11,7 +11,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        ('share/' + package_name + '/launch', glob('robot_wasd/launch/*.launch.py')),
+        ('share/' + package_name + '/launch', glob('robot_wasd/launch/rob.launch.py')),
         ('share/' + package_name + '/urdf', glob('robot_wasd/urdf/*')),
         ('share/' + package_name + '/rviz', glob('robot_wasd/rviz/*')),
     ],

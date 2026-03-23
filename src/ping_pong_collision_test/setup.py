@@ -1,7 +1,7 @@
-from setuptools import find_packages, setup
 from glob import glob
+from setuptools import find_packages, setup
 
-package_name = 'prova_gz'
+package_name = 'ping_pong_collision_test'
 
 setup(
     name=package_name,
@@ -11,9 +11,8 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        ('share/' + package_name + '/launch', glob(f'{package_name}/launch/*.launch.py')),
-        ('share/' + package_name + '/urdf', glob(f'{package_name}/urdf/*')),
-        ('share/' + package_name + '/world', glob(f'{package_name}/world/test.sdf')),
+        ('share/' + package_name + '/launch', glob('ping_pong_collision_test/launch/*.py')),
+        ('share/' + package_name + '/worlds', glob('ping_pong_collision_test/worlds/*.sdf')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,

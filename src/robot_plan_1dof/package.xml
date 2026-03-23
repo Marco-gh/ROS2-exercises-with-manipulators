@@ -3,7 +3,8 @@
 <package format="3">
   <name>robot_plan_1dof</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>Here we have a node that publishes the angles to a topic and a node that reads them and moves 
+  the manipulator</description>
   <maintainer email="marcosilveri32@gmail.com">marco</maintainer>
   <license>Apache-2.0</license>
 

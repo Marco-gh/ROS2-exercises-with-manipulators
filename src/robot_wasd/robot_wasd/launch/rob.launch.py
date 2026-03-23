@@ -33,11 +33,11 @@ def generate_launch_description():
         output='screen'
     )
 
-    if not sys.stdin.isatty():
+    if sys.stdin.isatty():
         main_node = Node(
                 package='robot_wasd',
                 executable='main_node'
         )
         return LaunchDescription([rsp, static_tf, rviz, main_node])
     else:
-        return LaunchDescription([rsp, static_tf, rviz])
+        return print("Launch file launched without a terminal, skipping main_node")

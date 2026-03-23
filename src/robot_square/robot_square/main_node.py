@@ -28,7 +28,7 @@ class AnglePublisher(Node):
 
         # 1 to draw a square
         # 0 to draw a circle
-        square = 0
+        square = 1
 
         self.sq = []
 
