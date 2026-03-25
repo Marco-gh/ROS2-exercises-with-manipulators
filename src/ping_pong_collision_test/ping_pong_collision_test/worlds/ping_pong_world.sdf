@@ -56,7 +56,7 @@
         <pose>0 0 0.74 0 0 0</pose>
 
         <collision name="collision">
-          <geometry>
+          <geometry>  
             <box>
               <size>2.74 1.525 0.04</size>
             </box>
@@ -207,7 +207,7 @@
 
     <!-- Ball -->
     <model name="ping_pong_ball">
-      <pose>0.25 0 1.10 0 0 0</pose>
+      <pose>1.35 0 1.50 0 0 0</pose>
       <link name="link">
         <inertial>
           <mass>0.0027</mass>
@@ -253,13 +253,51 @@
       </link>
     </model>
 
-    <!-- Robot arm -->
+    <!-- Robot arm -->  
     <model name="ping_pong_arm">
       <!-- Positioned on the right side of the table, facing toward the table -->
       <static>false</static>
       <pose>1.60 0 0 0 0 3.14159265359</pose>
 
-      <!-- Vertical support -->
+      <plugin
+        filename="gz-sim-joint-position-controller-system"
+        name="gz::sim::systems::JointPositionController">
+        <joint_name>joint0</joint_name>
+        <topic>/arm/joint0/cmd_pos</topic>
+      </plugin>
+
+      <plugin
+        filename="gz-sim-joint-position-controller-system"
+        name="gz::sim::systems::JointPositionController">
+        <joint_name>joint1</joint_name>
+        <topic>/arm/joint1/cmd_pos</topic>
+      </plugin>
+
+      <plugin
+        filename="gz-sim-joint-position-controller-system"
+        name="gz::sim::systems::JointPositionController">
+        <joint_name>joint2</joint_name>
+        <topic>/arm/joint2/cmd_pos</topic>
+      </plugin>
+
+      <plugin
+        filename="gz-sim-joint-position-controller-system"
+        name="gz::sim::systems::JointPositionController">
+        <joint_name>joint3</joint_name>
+        <topic>/arm/joint3/cmd_pos</topic>
+      </plugin>
+
+      <plugin
+        filename="gz-sim-joint-state-publisher-system"
+        name="gz::sim::systems::JointStatePublisher">
+        <topic>/arm/joint_state</topic>
+        <joint_name>joint0</joint_name>
+        <joint_name>joint1</joint_name>
+        <joint_name>joint2</joint_name>
+        <joint_name>joint3</joint_name>
+      </plugin>
+
+      <!-- Link alla base -->
       <link name="base_link">
         <pose>0 0 0 0 0 0</pose>
         <inertial>
@@ -297,14 +335,21 @@
         </visual>
       </link>
 
-      <joint name="base_to_world" type="fixed">
+      <joint name="joint0" type="revolute">
         <parent>world</parent>
         <child>base_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-3.14</lower>
+            <upper>3.14</upper>
+            <effort>100.0</effort>
+            <velocity>2.0</velocity>
+          </limit>
+        </axis>
       </joint>
 
-      <!-- Shoulder link -->
       <link name="link1">
-        <!-- Link frame at the shoulder joint -->
         <pose>0 0 0.90 0 0 0</pose>
         <inertial>
           <pose>0.225 0 0 0 0 0</pose>
@@ -323,6 +368,18 @@
               <size>0.45 0.06 0.06</size>
             </box>
           </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.2</mu>
+                <mu2>0.2</mu2>
+              </ode>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0.85</restitution_coefficient>
+              <threshold>0.0001</threshold>
+            </bounce>
+          </surface>
         </collision>
 
         <visual name="visual">
@@ -344,10 +401,10 @@
         <child>link1</child>
         <pose>0 0 0 0 0 0</pose>
         <axis>
-          <xyz>0 0 1</xyz>
+          <xyz>0 1 0</xyz>
           <limit>
-            <lower>-2.6</lower>
-            <upper>2.6</upper>
+            <lower>-3.14</lower>
+            <upper>3.14</upper>
             <effort>80.0</effort>
             <velocity>3.0</velocity>
           </limit>
@@ -379,6 +436,18 @@
               <size>0.40 0.05 0.05</size>
             </box>
           </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.2</mu>
+                <mu2>0.2</mu2>
+              </ode>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0.85</restitution_coefficient>
+              <threshold>0.0001</threshold>
+            </bounce>
+          </surface>
         </collision>
 
         <visual name="visual">
@@ -402,8 +471,8 @@
         <axis>
           <xyz>0 1 0</xyz>
           <limit>
-            <lower>-1.4</lower>
-            <upper>1.4</upper>
+            <lower>-3.14</lower>
+            <upper>3.14</upper>
             <effort>60.0</effort>
             <velocity>3.5</velocity>
           </limit>
@@ -435,6 +504,18 @@
               <size>0.18 0.04 0.04</size>
             </box>
           </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.2</mu>
+                <mu2>0.2</mu2>
+              </ode>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0.85</restitution_coefficient>
+              <threshold>0.0001</threshold>
+            </bounce>
+          </surface>
         </collision>
 
         <visual name="visual">
@@ -471,7 +552,7 @@
       </joint>
 
       <link name="racket_link">
-        <pose>1.03 0 0.90 0 0 0</pose>
+        <pose>1.03 0 0.90 0 1.57079632679 0</pose>
 
         <inertial>
           <pose>0.01 0 0 0 0 0</pose>

@@ -13,8 +13,6 @@ setup(
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/launch', glob('ping_pong_collision_test/launch/*.py')),
         ('share/' + package_name + '/worlds', glob('ping_pong_collision_test/worlds/*.sdf')),
-        ('share/' + package_name + '/worlds',
-            glob('ping_pong_collision_test/worlds/*.sdf')),
         ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -29,6 +27,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'ping_pong_pub_fun = ping_pong_collision_test.ping_pong_pub_fun:main',
         ],
     },
 )
