@@ -17,3 +17,6 @@ __pycache__/
 # Cartelle specifiche dell'IDE
 .vscode/
 .idea/
+
+# Ignoriamo il pacchetto relativo al progetto del pingpong
+src/ping_pong_manip/

@@ -56,12 +56,20 @@
         <pose>0 0 0.74 0 0 0</pose>
 
         <collision name="collision">
-          <geometry>  
+          <geometry>
             <box>
               <size>2.74 1.525 0.04</size>
             </box>
           </geometry>
           <surface>
+            <contact>
+              <ode>
+                <kp>1e6</kp>
+                <kd>10</kd>
+                <max_vel>1.0</max_vel>
+                <min_depth>0.0005</min_depth>
+              </ode>
+            </contact>
             <friction>
               <ode>
                 <mu>0.25</mu>
@@ -117,7 +125,7 @@
 
       <!-- Legs -->
       <link name="leg_1">
-        <pose>1.15 0.62 0.37 0 0 0</pose>
+        <pose>1.15 0.62 0.35 0 0 0</pose>
         <collision name="collision">
           <geometry>
             <box>
@@ -139,7 +147,7 @@
       </link>
 
       <link name="leg_2">
-        <pose>1.15 -0.62 0.37 0 0 0</pose>
+        <pose>1.15 -0.62 0.35 0 0 0</pose>
         <collision name="collision">
           <geometry>
             <box>
@@ -161,7 +169,7 @@
       </link>
 
       <link name="leg_3">
-        <pose>-1.15 0.62 0.37 0 0 0</pose>
+        <pose>-1.15 0.62 0.35 0 0 0</pose>
         <collision name="collision">
           <geometry>
             <box>
@@ -183,7 +191,7 @@
       </link>
 
       <link name="leg_4">
-        <pose>-1.15 -0.62 0.37 0 0 0</pose>
+        <pose>-1.15 -0.62 0.35 0 0 0</pose>
         <collision name="collision">
           <geometry>
             <box>
@@ -225,6 +233,14 @@
             </sphere>
           </geometry>
           <surface>
+            <contact>
+              <ode>
+                <kp>1e6</kp>
+                <kd>10</kd>
+                <max_vel>1.0</max_vel>
+                <min_depth>0.0005</min_depth>
+              </ode>
+            </contact>
             <friction>
               <ode>
                 <mu>0.12</mu>
@@ -253,7 +269,7 @@
       </link>
     </model>
 
-    <!-- Robot arm -->  
+    <!-- Robot arm -->
     <model name="ping_pong_arm">
       <!-- Positioned on the right side of the table, facing toward the table -->
       <static>false</static>
@@ -264,6 +280,11 @@
         name="gz::sim::systems::JointPositionController">
         <joint_name>joint0</joint_name>
         <topic>/arm/joint0/cmd_pos</topic>
+        <p_gain>8.0</p_gain>
+        <i_gain>0.02</i_gain>
+        <d_gain>0.25</d_gain>
+        <cmd_max>20</cmd_max>
+        <cmd_min>-20</cmd_min>
       </plugin>
 
       <plugin
@@ -271,6 +292,11 @@
         name="gz::sim::systems::JointPositionController">
         <joint_name>joint1</joint_name>
         <topic>/arm/joint1/cmd_pos</topic>
+        <p_gain>8.0</p_gain>
+        <i_gain>0.02</i_gain>
+        <d_gain>0.25</d_gain>
+        <cmd_max>20</cmd_max>
+        <cmd_min>-20</cmd_min>
       </plugin>
 
       <plugin
@@ -278,6 +304,11 @@
         name="gz::sim::systems::JointPositionController">
         <joint_name>joint2</joint_name>
         <topic>/arm/joint2/cmd_pos</topic>
+        <p_gain>8.0</p_gain>
+        <i_gain>0.02</i_gain>
+        <d_gain>0.25</d_gain>
+        <cmd_max>20</cmd_max>
+        <cmd_min>-20</cmd_min>
       </plugin>
 
       <plugin
@@ -285,6 +316,11 @@
         name="gz::sim::systems::JointPositionController">
         <joint_name>joint3</joint_name>
         <topic>/arm/joint3/cmd_pos</topic>
+        <p_gain>8.0</p_gain>
+        <i_gain>0.02</i_gain>
+        <d_gain>0.25</d_gain>
+        <cmd_max>20</cmd_max>
+        <cmd_min>-20</cmd_min>
       </plugin>
 
       <plugin
@@ -346,6 +382,10 @@
             <effort>100.0</effort>
             <velocity>2.0</velocity>
           </limit>
+          <dynamics>
+            <damping>0.2</damping>
+            <friction>0.02</friction>
+          </dynamics>
         </axis>
       </joint>
 
@@ -573,6 +613,14 @@
             </cylinder>
           </geometry>
           <surface>
+            <contact>
+              <ode>
+                <kp>1e6</kp>
+                <kd>10</kd>
+                <max_vel>1.0</max_vel>
+                <min_depth>0.0005</min_depth>
+              </ode>
+            </contact>
             <friction>
               <ode>
                 <mu>0.9</mu>

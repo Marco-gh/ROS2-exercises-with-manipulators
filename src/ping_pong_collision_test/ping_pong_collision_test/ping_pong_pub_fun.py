@@ -26,8 +26,8 @@ class ArmCommander(Node):
     def send_cmds(self):
 
         self.m0.data = 0.0
-        self.m1.data = self.m1.data - 0.01
-        self.m2.data = 0.0
+        self.m1.data = 0.0
+        self.m2.data = self.m1.data + 0.01
         self.m3.data = 0.0
 
         self.pub0.publish(self.m0)
