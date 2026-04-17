@@ -19,4 +19,4 @@ __pycache__/
 .idea/
 
 # Ignoriamo il pacchetto relativo al progetto del pingpong
-src/ping_pong_manip/
+src/ping_pong_rl/
